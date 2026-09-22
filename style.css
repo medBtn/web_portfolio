@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #f7f7f4;
+    color: #171717;
+    font: 16px system-ui;
+    line-height: 1.6
+}
+
+main,
+header {
+    width: min(1080px, calc(100% - 28px));
+    margin: auto
+}
+
+header {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #deded8;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    font-weight: 800;
+    font-size: 1.4rem
+}
+
+a {
+    color: #5b4bdb;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 62vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: .95
+}
+
+.hero p {
+    max-width: 650px;
+    color: #666
+}
+
+.button {
+    padding: 11px 18px;
+    background: #5b4bdb;
+    color: #fff;
+    border: 0;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.hero .button {
+    align-self: flex-start;
+    margin-top: 20px
+}
+
+section {
+    padding: 70px 0;
+    border-top: 1px solid #deded8
+}
+
+section>p:first-child {
+    color: #5b4bdb;
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .14em
+}
+
+
+h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.05
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #deded8;
+    border-radius: 14px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column
+}
+
+.project a {
+    margin-top: auto
+}
+
+.project small {
+    color: #666
+}
+
+
+form{
+    display: grid;
+    max-width: 650px;
+}
+
+label {
+    font-weight: 700;
+    margin-top: 10px
+}
+
+input, textarea{
+     padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit
+}
+form p {
+    min-height: 1.3em;
+    margin: 0;
+    color: #b42318
+}
+
+#formSuccess{
+    color: rgb(13, 185, 65);
+}
+
+footer{
+    text-align: center;
+    padding: 36px ;
+    border-top: 1px solid #deded8;
+    color: #666
+}
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+}
