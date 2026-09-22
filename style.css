@@ -90,7 +90,7 @@ h2 {
     line-height: 1.05
 }
 
-.projects{
+.projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -115,7 +115,7 @@ h2 {
 }
 
 
-form{
+form {
     display: grid;
     max-width: 650px;
 }
@@ -125,35 +125,44 @@ label {
     margin-top: 10px
 }
 
-input, textarea{
-     padding: 11px;
+input,
+textarea {
+    padding: 11px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font: inherit
 }
+
 form p {
     min-height: 1.3em;
     margin: 0;
     color: #b42318
 }
 
-#formSuccess{
+#formSuccess {
     color: rgb(13, 185, 65);
 }
 
-footer{
+footer {
     text-align: center;
-    padding: 36px ;
+    padding: 36px;
     border-top: 1px solid #deded8;
     color: #666
 }
 
 @media (max-width: 768px) {
-    header{
+    header {
         flex-direction: column;
         align-items: flex-start;
     }
-    .projects{
+
+    .projects {
         grid-template-columns: 1fr;
     }
 }
+
+/* 
+this is a comment for github changes only in new commit,
+ it will not be visible in the website
+
+*/
