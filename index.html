@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Portfolio Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <a class="brand" href="#">Brand</a>
+        <nav>
+            <a href="#projects">Project</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main section-->
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <p>FRONTEND DEVELOPER IN PROGRESS</p>
+            <h1>Hello, I'm Alex.</h1>
+            <p>Learning to build useful, accessible and responsive websites with HTML, CSS and JavaScript.</p>
+            <a class="button" href="#projects">See my work</a>
+        </section>
+
+
+        <!-- About section -->
+        <section id="about">
+            <p>ABOUT</p>
+            <h2>A little about me</h2>
+            <p>I am building real projects while learning how the web works.</p>
+        </section>
+
+        <!-- Project section -->
+        <section id="projects">
+            <p>PROJECTS</p>
+            <h2>Things I am building</h2>
+            <p id="projectSummary"></p>
+            <div id="projectList" class="projects">
+                
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <p>Contact</p>
+            <h2>Let's connect</h2>
+            <form action="">
+                <label for="name">Name</label>
+                <input id="name">
+                <p id="nameError"></p>
+
+                <label for="email">Email</label>
+                <input id="email" type="email">
+                <p id="emailError"></p>
+
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+                <p id="messageError"></p>
+
+                <button class="button" type="submit">Send message</button>
+                <p id="formSuccess"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        Built during WebStart
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
